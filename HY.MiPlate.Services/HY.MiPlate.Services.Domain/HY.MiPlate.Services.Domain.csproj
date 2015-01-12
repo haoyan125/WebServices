@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISampleDomain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleDomain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HY.MiPlate.Services.Contact\HY.MiPlate.Services.Contact.csproj">
+      <Project>{968ac56e-8684-4325-bf42-8568da1c935e}</Project>
+      <Name>HY.MiPlate.Services.Contact</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
